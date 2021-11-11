@@ -25,5 +25,12 @@ cp -R oom/kubernetes/helm/plugins/ ~/Library/helm/plugins
 helm plugin install https://github.com/chartmuseum/helm-push.git --version 0.9.0
 ```
 
+Install chartmuseum:
+```bash
+curl -LO https://s3.amazonaws.com/chartmuseum/release/latest/bin/linux/amd64/chartmuseum
+chmod +x ./chartmuseum
+mv ./chartmuseum /usr/local/bin
+```
+
 Source: https://docs.onap.org/projects/onap-oom/en/latest/oom_quickstart_guide.html
 
