@@ -19,3 +19,8 @@ git clone -b istanbul https://gerrit.onap.org/r/oom --recurse-submodules --depth
 cd oom/kubernetes
 ```
 
+install helm plugins:
+```bash
+helm plugin install https://github.com/chartmuseum/helm-push.git
+```
+
