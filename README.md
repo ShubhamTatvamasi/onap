@@ -1,10 +1,5 @@
 # onap
 
-clone oom repo for k8s deployment:
-```bash
-git clone -b istanbul https://gerrit.onap.org/r/oom --depth 1
-```
-
 ### k8s deployment:
 
 Install cert-manager:
@@ -16,5 +11,11 @@ helm install cert-manager jetstack/cert-manager \
   --create-namespace \
   --namespace cert-manager \
   --set installCRDs=true
+```
+
+clone oom repo for k8s deployment:
+```bash
+git clone -b istanbul https://gerrit.onap.org/r/oom --depth 1
+cd oom/kubernetes
 ```
 
