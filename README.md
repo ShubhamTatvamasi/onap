@@ -16,12 +16,13 @@ helm install cert-manager jetstack/cert-manager \
 clone oom repo for k8s deployment:
 ```bash
 git clone -b istanbul https://gerrit.onap.org/r/oom --recurse-submodules --depth 1
-cp -R oom/kubernetes/helm/plugins/ ~/.local/share/helm/plugins
 cd oom/kubernetes
 ```
 
 install helm plugins:
 ```bash
+mkdir -p ~/.local/share/helm/plugins
+cp -R oom/kubernetes/helm/plugins/ ~/.local/share/helm/plugins
 helm plugin install https://github.com/chartmuseum/helm-push.git --version 0.9.0
 ```
 
