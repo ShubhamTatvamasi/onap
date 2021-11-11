@@ -19,9 +19,11 @@ git clone -b istanbul https://gerrit.onap.org/r/oom --recurse-submodules --depth
 cd oom/kubernetes
 ```
 
-install helm plugins:
+install helm plugins for macOS:
 ```bash
 cp -R oom/kubernetes/helm/plugins/ ~/Library/helm/plugins
 helm plugin install https://github.com/chartmuseum/helm-push.git --version 0.9.0
 ```
+
+Source: https://docs.onap.org/projects/onap-oom/en/latest/oom_quickstart_guide.html
 
