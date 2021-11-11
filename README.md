@@ -22,6 +22,6 @@ cd oom/kubernetes
 
 install helm plugins:
 ```bash
-helm plugin install https://github.com/chartmuseum/helm-push.git
+helm plugin install https://github.com/chartmuseum/helm-push.git --version 0.9.0
 ```
 
